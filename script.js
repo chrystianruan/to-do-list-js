@@ -6,7 +6,7 @@ let alert = document.getElementById("alert");
 var taskList = [];
 var arroz = document.getElementById("arroz");
 let mostra = document.getElementById("mostra");
-
+let accomplished = document.getElementById("accomplished");
 
 
 taskBtn.addEventListener("click", function() {
@@ -23,17 +23,21 @@ taskBtn.addEventListener("click", function() {
         taskList.push(taskInput.value);
         let list = document.createElement("input");
         let label = document.createElement("label");
+        let div = document.createElement("div");
         let br = document.createElement("br");
         list.id = taskList.indexOf(taskInput.value);
         list.type = "checkbox";
         list.className = "check";
+        div.id = "div-flex";
         list.name = taskInput.value;
         label.className = "label";
         label.id = taskInput.value;
         label.textContent = taskInput.value;
-        arroz.appendChild(list);
-        arroz.appendChild(label);
-        arroz.appendChild(br);
+        show.appendChild(div);
+        div.appendChild(list);
+        div.appendChild(label);
+        div.appendChild(br);
+
         let checks = document.querySelectorAll(".check");
         let labels = document.querySelectorAll(".label");
         for (let ch of checks) {
@@ -43,6 +47,11 @@ taskBtn.addEventListener("click", function() {
                         for (let lab of labels) {
                             if (lab.id == ch.name) {
                                 lab.style.textDecoration = "line-through";
+                                accomplished.style.display = "block";
+                                accomplished.textContent = `A tarefa "${lab.id}" foi marcada como realizada!`;
+                                setTimeout(function() {
+                                    accomplished.style.display="none";
+                                }, 1500)
                             }
                         }
                     }
