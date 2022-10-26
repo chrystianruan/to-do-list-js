@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.container {
+    margin: 3% auto;
+    text-align: center;
+
+}
+
+.task-input {
+    background-color: rgb(230, 230, 227);
+    padding: 5px;
+    border: 0.5px solid #ccc;
+    width: 50%;
+    border-radius:7px;
+}
+
+.task-btn {
+    font-size: 1.3em;
+    background-color: gold;
+    border: 0.5px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bx.bx-plus-circle {
+    font-size: 1.3em;
+    color: black;
+}
+
+.show {
+    margin: 3%;
+    display: none;
+}
+
+
+
+.btn-del {
+    cursor: pointer;
+    padding: 1px 5px;
+    font-size: 1.5em;
+    margin: 0 15px
+
+}
+
+.alert {
+    display: none;
+    margin: 3% auto;
+    max-width: 70%;
+    font-weight: bolder;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(240, 81, 81);
+}
