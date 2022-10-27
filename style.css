@@ -37,7 +37,10 @@ body {
 
 .arroz {
     display: flex;
+    font-size: 25px;
     flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -63,8 +66,14 @@ body {
     display: none;
     background-color: chartreuse;
     width: 40%;
+    font-weight: bold;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     margin: 5% auto;
+}
+
+.div-flex i {
+    margin: 0 1%;
+    cursor: pointer;
 }
