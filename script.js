@@ -105,7 +105,7 @@ taskBtn.addEventListener("click", function() {
                 for (let j = 0; j < divs.length; j++) {
                     if (deletes[i].id == divs[j].id) {
                         divs[j].style.display = "none";
-                        taskList.splice(divs[j], 1)
+                        taskList.splice(taskList.indexOf(divs[j], 1));
                     }
                 }
             });
