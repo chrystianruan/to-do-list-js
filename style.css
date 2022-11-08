@@ -77,3 +77,27 @@ body {
     margin: 0 1%;
     cursor: pointer;
 }
+
+.modal {
+    display: none;
+    z-index: 1;
+    position: relative;
+    background-color: aliceblue(78, 74, 74);
+    box-shadow: 0 0 0.6em black;
+    border: 1px solid #ccc;
+    margin: 3% auto;
+    padding: 15px;
+    width: 30%;
+    border-radius: 10px;
+}
+
+.fa.fa-times {
+    font-size: 1.5em;
+    float: right;
+    cursor:pointer;
+}
+
+.fa.fa-times:hover {
+    transform: rotate(90deg);
+    transition:  0.5s;
+}
