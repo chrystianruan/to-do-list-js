@@ -165,6 +165,7 @@ function deleteTask() {
                 item =  taskList.map(value => value.id).indexOf(del.id);
                 taskList.splice(item, 1);
                 showTasks();
+                taskInput.value = "";
                 taskBtn.click();
                 divAlert.style.display = "none";
             });
